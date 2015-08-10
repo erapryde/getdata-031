@@ -1,10 +1,12 @@
-### Expectations of file structures and packages used for Getting and Cleaning Data Course Project, August 3rd 2015
+#Getting and Cleaning Data<br>
+
+### Expectations of file structures and packages used for <a href="https://github.com/erapryde/getdata-031/blob/master/run_analysis.r">run_analysis.r</a>
 
 R version 3.1.2<br>
 install.packages("dplyr") has been installed<br>
 <a href="https://en.wikipedia.org/wiki/CamelCase">**CamelCase**</a> is used as the coding style for variables which are important in that they fulfill the assignment requirements. **assignmentOne**, **assignmentTwo**, **assignmentThree** and **assignmentFour** are the ones in question
 
-###Expected folder structure for run_analysis.r
+###Expected folder structure for <a href="https://github.com/erapryde/getdata-031/blob/master/run_analysis.r">run_analysis.r</a>
 
 run_analysis.r is on the same folder level as the UCI HAR Dataset folder<br>
 Activity labels and feature files are in setwd("./UCI HAR Dataset")<br>
