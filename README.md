@@ -95,7 +95,7 @@ assignmentTwo<-cbind(subject,Activity,Z)
 #Assignment 3: Uses descriptive activity names to name the activities in the data set
 This has already been done in the pre-processing stage when **Activity** was recoded into a factor variable of 6 levels meaningfully described instead of the numeric values.
 
-#Assignment 4: Appropriately labels the data set with descriptive variable names.
+#Assignment 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.<br>
 Group **assignmentTwo** by **subject** and **Activity** and then apply mean over each group using **summarise_each** function. 
 ```
 assignmentFour<-group_by(assignmentTwo, subject, Activity) %>% summarise_each(funs(mean))
