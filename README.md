@@ -67,7 +67,7 @@ for (i in 1:dim(y)[1]){
 Activity<-as.factor(k)
 ```
 
-Also, we recode the numeric **subject** variables into a 30-factor variable which is more descriptive. Finally, concatenate the **subjects**, **Activity** and **X** into a complete merged **assignmentOne**. <a href="https://en.wikipedia.org/wiki/CamelCase">CamelCase</a> is used as it is a viable form of describing important variables that is eye-catching and descriptive.  
+Also, we recode the numeric **subject** variables into a 30-factor variable which is more descriptive. Finally, concatenate the **subjects**, **Activity** and **X** into a complete merged **assignmentOne**. <a href="https://en.wikipedia.org/wiki/CamelCase">**CamelCase**</a> is used as it is a viable form of describing important variables that is eye-catching and descriptive.  
 
 ```
 y <- vector(length = dim(y)[1],mode="character")
