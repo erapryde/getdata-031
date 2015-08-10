@@ -1,10 +1,11 @@
 # getdata-031
 Getting and Cleaning Data Course Project, August 3rd 2015
 
-##Expected setup of user of run_analysis.r
-R version
+R version 3.1.2
 
 install.packages("dplyr") has been installed
+
+##Expected folder structure for run_analysis.r
 
 run_analysis.r is on the same folder level as the UCI HAR Dataset folder
 
