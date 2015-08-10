@@ -1,10 +1,10 @@
 run_analysis <- function(){
   #Setting directory
-  setwd("C:/Users/Admin/Dropbox/Coursera/20150803 Getting and Cleaning Data")
-  install.packages("dplyr")
+  #setwd("C:/Users/Admin/Dropbox/Coursera/20150803 Getting and Cleaning Data")
+  #install.packages("dplyr")
   library(dplyr) #dplyr
   
-  setwd("./UCI HAR Dataset")
+  #setwd("./UCI HAR Dataset")
   #Pre-amble: Reading in Data Labels
   activity_labels<-read.table("activity_labels.txt",col.names=c("Label","Activity"))
   features<-read.table("features.txt",col.names=c("Label","variable"))
