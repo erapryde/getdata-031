@@ -2,6 +2,7 @@
 
 R version 3.1.2<br>
 install.packages("dplyr") has been installed<br>
+<a href="https://en.wikipedia.org/wiki/CamelCase">**CamelCase**</a> is used as the coding style for variables which are important in that they fulfill the assignment requirements. **assignmentOne**, **assignmentTwo**, **assignmentThree** and **assignmentFour** are the ones in question
 
 ###Expected folder structure for run_analysis.r
 
@@ -78,3 +79,24 @@ subject<- as.factor(y)
 assignmentOne<-cbind(subject,Activity,X) 
 ```
 
+#Assignment 2: Extracts only the measurements on the mean and standard deviation for each measurement
+- grep on the words mean[(][)] to find only data which contains the string **mean() instead of mean**. This is because there are some labels such as **angle(tBodyAccJerkMean) and meanFreq** which seem to be a variable by itself and not the mean of a set of variables, which would be inconsistent with other means.
+- grep also on std[(][)] to find only data which contains the string **std()**
+- extract the columns of **X** which contain **mean()** and **std()** into **Z** 
+
+```
+l1<-grep("mean[(][)]",features$variable,ignore.case=T,value=F) #regular expressions, returns vector of columns with means
+l2<-grep("std[(][)]",features$variable,ignore.case=T,value=F) #regular expressions, returns vector of columns with std
+l<-c(l1,l2) #merges all columns to be read
+Z<-X[,l] #extract columns
+assignmentTwo<-cbind(subject,Activity,Z)
+```
+
+#Assignment 3: Uses descriptive activity names to name the activities in the data set
+This has already been done in the pre-processing stage when **Activity** was recoded into a factor variable of 6 levels meaningfully described instead of the numeric values.
+
+#Assignment 4: Appropriately labels the data set with descriptive variable names.
+Group **assignmentTwo** by **subject** and **Activity** and then apply mean over each group using **summarise_each** function. 
+```
+assignmentFour<-group_by(assignmentTwo, subject, Activity) %>% summarise_each(funs(mean))
+```
