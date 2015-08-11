@@ -1,10 +1,12 @@
 #List of generated variables<br>
 
+---
 ###Raw variable names, left unchanged out of respect for the data's source
 ---
 **features** <- This holds the *561* names of the variables that were measured by reading in features.txt. Its attributes are c(*labels* and *variable*).<br>
 **activityLabels** <- This holds the 6 codes which map y_train and y_test into sensible activity and consists of 6 levels which are *WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING AND LAYING*.<br><br>
 
+---
 ###Generated variables from reading the data files
 ---
 **xTrain** <- a list made by reading X_train, it holds *7352 observations of 561* normalised, numeric variables<br>
@@ -15,6 +17,7 @@
 **yTest** <- a list made by reading y_test, it holds the *2947* activities that were occuring when measurements in xTest were taken.<br>
 **subjectTest** <- a list made by reading subject_test, it holds the identifier of the **Test Subject** of whom the measurements in xTest were taken.<br>
 
+---
 ###Transformed variables, by rbind, cbind, recoding as well as subsetting
 ---
 X
