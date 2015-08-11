@@ -1,18 +1,34 @@
-#List of generated variables<br>
+#List of raw, interim, generated and transformed variables<br>
+
+|               |   CodeBook             |  Mode  |  Class       |  dim() or length()  |  Source         |  Remarks  |
+|:-------------:|:---------------------: |:------:|:------------:|:-------------------:|:---------------:|-----------|
+|**Raw**        |`features`              |  list  |  data.frame  |  561 x 2            | *features.txt*  |  Remarks  |
+|               |`activityLabels`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|**Generated**  |`xTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`xTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`yTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`yTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  | 
+|               |`subjectTrain`          |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`subjectTest`           |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|**Transformed**|`X`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`y`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`subject`               |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|**Recoded**    |`Activity`              |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`subject` (overwritten) |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|**Extracted**  |`l1`                    |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`l2`                    |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`l`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`Z`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|**Holder**     |`k`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`a`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|**Submissions**|`assignmentOne`         |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`assignmentTwo`         |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`assignmentThree`       |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`assignmentFour`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`assignmentFive`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 
 
 
-
-|             |   CodeBook             |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|:-----------:|:---------------------: |:------:|:-------:|:-------------------:|:--------:|-----------|
-|**Raw**      |`features`              |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|             |`activityLabels`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|**Generated**|`xTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|             |`xTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|             |`yTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|             |`yTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  | 
-|             |`subjectTrain`          |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|             |`subjectTest`           |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 
 ---
 ###Raw variable names, left unchanged out of respect for the data's source
