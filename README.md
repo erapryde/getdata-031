@@ -30,7 +30,7 @@ Move into test folder, read data then move back up
 - read subject_test.txt into subjectTest
 
 ```
-  setwd(./UCI HAR Datasets)
+  setwd("./UCI HAR Dataset")
   activityLabels<-read.table("activity_labels.txt",col.names=c("Label","Activity"))
   features<-read.table("features.txt",col.names=c("Label","variable"))
   setwd("./train")
