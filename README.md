@@ -7,3 +7,37 @@ run_analysis.R also assumes that you have a Windows system as setwd() commands a
 You must also have installed and loaded dplyr package. You can do so by<br>
 >>install.packages("dplyr")<br>
 >>library(dplyr)<br>
+
+We will be using <a href="https://en.wikipedia.org/wiki/CamelCase">camelCase</a> for variable names to improve readability of the variables. 
+________________________________________________________________________________________________________________________________
+#Reading and Loading Data
+________________________________________________________________________________________________________________________________
+The objective is to move into UCI HAR Dataset and then
+- read activity_labels.txt into activityLabels
+- read features.txt into features
+
+Move into train folder, read data then move back up
+- read X_train.txt into xTrain
+- read y_train.txt into yTrain
+- read subject_train.txt into subjectTrain
+
+Move into test folder, read data then move back up
+- read X_test.txt into xTest
+- read y_test.txt into yTest
+- read subject_test.txt into subjectTest
+
+```
+  activityLabels<-read.table("activity_labels.txt",col.names=c("Label","Activity"))
+  features<-read.table("features.txt",col.names=c("Label","variable"))
+  setwd("./train")
+  subjectTrain<-read.table("subject_train.txt",col.names="subject")
+  xTrain<-read.table("X_train.txt")
+  yTrain<-read.table("y_train.txt",col.names="Training label")
+  setwd("../")
+  setwd("./test")
+  subjectTest<-read.table("subject_test.txt",col.names="subject")
+  xTest<-read.table("X_test.txt")
+  yTest<-read.table("y_test.txt",col.names="Training label")
+  setwd("../")
+  setwd("../")
+```
