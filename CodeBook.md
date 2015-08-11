@@ -12,8 +12,8 @@
 |               |`subjectTest`           |  list  |  data.frame  |  2947 x 1           |  *subject_test.txt*   |  Test dataset holding participant identity while xTest was being measured. Needs to be recoded into factors   |
 |**Transformed**|`X`                     | list   |  data.frame   |  10299 x 561  |  rbind(`xTrain`, `xTest`)  |  Merged datasets of `xTrain` and `xTest`  |
 |               |`y`                     |  list  |  data.frame  |  10299 x 1 |  rbind(`yTrain`, `yTest`)  |  Merged datasets of `xTrain` and `xTest`, later to be used as a temporary holder and discarded in favour of the term **Activity**  |
-|               |`subject`               |  numeric  |  factor  |  10266  |  rbind(`subjectTrain`,`subjectTest`) and then recoded as factor variables to denote **Test Subject i**  |  Remarks  |
-|**Recoded**    |`Activity`              |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`subject`               |  numeric  |  factor  |  10299  |  rbind(`subjectTrain`,`subjectTest`) and then recoded as factors  |  Holds participant identity whil X was measured  |
+|**Recoded**    |`Activity`              |  numeric  |  factor  |  10299  |  recoded y into factors using activityLabels  |  *LAYING*, *SITTING*, *STANDING*, *WALKING*, *WALKING_DOWNSTAIRS*, *WALKING_UPSTAIRS*  |
 |               |`subject` (overwritten) |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |**Extracted**  |`l1`                    |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |               |`l2`                    |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
