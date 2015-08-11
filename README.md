@@ -41,3 +41,5 @@ Move into test folder, read data then move back up
   setwd("../")
   setwd("../")
 ```
+
+#Assignment 1: Merges the training and the test sets to create one data set
