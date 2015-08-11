@@ -17,9 +17,9 @@
 |`l1`                    |  numeric  |  integer  |  33  |  grep("mean[(][)]",features$variable,F,value=F)  |  indices of features that containt the word *"mean()"*  |
 |`l2`                    |  numeric  |  integer  |  33   |  grep("std[(][)]",features$variable,F,value=F)   |  indices of features that containt the word *"std()"*  |
 |`l`                     |  numeric  |  integer  |  66  |  c(`l1`,`l2)`  |  Overall container for indices of *"mean()"* and *"std()"*  |
-|`Z`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`k`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`a`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|`Z`                     |  list  |  data.frame  |  10299 x 66  |  Extracted components from X  |  Contains only the means() and std() observations  |
+|`k`                     |  char  |  char  |  10299  |  vector used to assist recoding of activityLabels into Activity  |  Remarks  |
+|`a`                     |  numeric  |  factor  | 66  |  Recoded from features$variable[l]  to meet tidy data principles|  `a` is used subsequently as the names of `Z`  |
 |`assignmentOne`         |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |`assignmentTwo`         |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |`assignmentThree`       |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
