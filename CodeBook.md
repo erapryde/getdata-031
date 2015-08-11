@@ -5,7 +5,7 @@
 
 |   CodeBook             |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |:---------------------: |--------|---------|---------------------|----------|-----------|
-| Raw Variable names     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+| **Raw Variable names** |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |`features`              |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |`activityLabels`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 
