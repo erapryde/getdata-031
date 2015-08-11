@@ -8,11 +8,11 @@
 |               |`xTest`                 |  list  |  data.frame  |  2947 x 561         |  *X_test.txt*  |  Test dataset holding normalised, numeric values of 561 measurements of 2947 combinations of subjects/activity |
 |               |`yTrain`                |  list  |  data.frame  |  7352 x 1           |  *y_train.txt*  |  Training dataset holding activities taking place while xTrain was being measured. Needs to be recoded into factors  |
 |               |`yTest`                 |  list  |  data.frame  |  2947 x 1           |  *y_test.txt*   |  Test dataset holding activities taking place while xTest was being measured. Needs to be recoded into factors  | 
-|               |`subjectTrain`          |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|               |`subjectTest`           |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|**Transformed**|`X`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|               |`y`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|               |`subject`               |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|               |`subjectTrain`          |  list  |  data.frame  |  7352 x 1           |  *subject_train.txt*  |  Training dataset holding participant identity while xTrain was being measured. Needs to be recoded into factors  |
+|               |`subjectTest`           |  list  |  data.frame  |  2947 x 1           |  *subject_test.txt*   |  Test dataset holding participant identity while xTest was being measured. Needs to be recoded into factors   |
+|**Transformed**|`X`                     | list   |  data.frame   |  10299 x 561  |  rbind(`xTrain`, `xTest`)  |  Merged datasets of `xTrain` and `xTest`  |
+|               |`y`                     |  list  |  data.frame  |  dim() or length()  |  Source  |  Remarks  |
+|               |`subject`               |  list  |  data.frame  |  dim() or length()  |  Source  |  Remarks  |
 |**Recoded**    |`Activity`              |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |               |`subject` (overwritten) |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |**Extracted**  |`l1`                    |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
