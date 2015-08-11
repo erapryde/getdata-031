@@ -20,45 +20,10 @@
 |`Z`                     |  list  |  data.frame  |  10299 x 66  |  Extracted components from X  |  Contains only the means() and std() observations  |
 |`k`                     |  char  |  char  |  10299  |  vector used to assist recoding of activityLabels into Activity  |  Remarks  |
 |`a`                     |  numeric  |  factor  | 66  |  Recoded from features$variable[l]  to meet tidy data principles|  `a` is used subsequently as the names of `Z`  |
-|`assignmentOne`         |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`assignmentTwo`         |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`assignmentThree`       |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`assignmentFour`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`assignmentFive`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|`assignmentOne`         |  list  |  data.frame  |  10299 x 563  |  cbind(subject, y, X)  |  rudimentary merged set, has no column names  |
+|`assignmentTwo`         | list  |  data.frame  |  10299 x 68  |  Extracted set containing *mean()* and *std()*  |  has no column names  |
+|`assignmentThree`       |  list  |  data.frame  |  10299 x 68  |  Recoded participants and Activity into meaningful factor levels  |  column names still not implemented  |
+|`assignmentFour`        |  list  |  data.frame  |  10299 x 68  |  Tidied up `features` and columns of `assignmentFour` appropraitely named  |    |
+|`assignmentFive`        |  list  |  tbl  |  180 x 68  |  group_by(assignmentFour, subject, activity) %>% summarise_each(funs(mean))  |  Averaged each variable for each participant for each activity  |
 
 
-
-
----
-###Raw variable names, left unchanged out of respect for the data's source
----
-**features** <- This holds the *561* names of the variables that were measured by reading in features.txt. Its attributes are c(*labels* and *variable*).<br>
-**activityLabels** <- This holds the 6 codes which map y_train and y_test into sensible activity and consists of 6 levels which are *WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING AND LAYING*.<br><br>
-
----
-###Generated variables from reading the data files
----
-**xTrain** <- a list made by reading X_train, it holds *7352 observations of 561* normalised, numeric variables<br>
-**yTrain** <- a list made by reading y_train, it holds the *7352* activities that were occuring when measurements in xTrain were taken.<br>
-**subjectTrain** <- a list made by reading subject_train, it holds the identifier of the **Test Subject** of whom the measurements in xTrain were taken.<br>
-
-**xTest** <- a list made by reading X_test, it holds *2947 observations of 561* normalised, numeric variables<br>
-**yTest** <- a list made by reading y_test, it holds the *2947* activities that were occuring when measurements in xTest were taken.<br>
-**subjectTest** <- a list made by reading subject_test, it holds the identifier of the **Test Subject** of whom the measurements in xTest were taken.<br>
-
----
-###Transformed variables, by rbind, cbind, recoding as well as subsetting
----
-X
-y
-subject
-
-Activity
-subject
-
-Z
-
-assignmentOne
-assignmentTwo
-assignmentThree
-assignmentFour
