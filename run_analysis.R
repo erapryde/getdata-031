@@ -1,5 +1,9 @@
 run_analysis<- function(){
   
+  #Code was written by erapryde ats of 11th August 2015
+  #No part shall be reproduced without expressed permission
+  #in accordane with the Coursera Honor Code.
+  
   library(dplyr)
   setwd("./UCI HAR Dataset")
   
