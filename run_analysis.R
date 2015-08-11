@@ -45,7 +45,9 @@ run_analysis<- function(){
   y<-rbind(yTrain,yTest)
   subject<-rbind(subjectTrain,subjectTest)  
   assignmentOne <- cbind(subject, y, X)
-  
+  #Code was written by erapryde as of 11th August 2015
+  #No part shall be reproduced without expressed permission
+  #in accordane with the Coursera Honor Code.  
   #---------------------------------------------------------
   #Assignment 2:  Extracts only the measurements on the mean and standard deviation for each measurement
   #---------------------------------------------------------
@@ -102,7 +104,9 @@ run_analysis<- function(){
     y[i] = paste("Test Subject",subject[i,1],sep=" ")
   }
   subject<- as.factor(y)
-  
+  #Code was written by erapryde as of 11th August 2015
+  #No part shall be reproduced without expressed permission
+  #in accordane with the Coursera Honor Code.  
   assignmentThree<-cbind(subject,Activity,Z)
   
   #---------------------------------------------------------
@@ -133,7 +137,9 @@ run_analysis<- function(){
   a<-gsub("_","",a)
   a<-tolower(a)
   a<-as.factor(a) #There are now only 66 levels
-  
+  #Code was written by erapryde as of 11th August 2015
+  #No part shall be reproduced without expressed permission
+  #in accordane with the Coursera Honor Code.  
   names(Z) <- a
   assignmentFour <- cbind(subject,Activity,Z)
   names(assignmentFour) <- tolower(names(assignmentFour))
@@ -159,4 +165,7 @@ run_analysis<- function(){
   write.table(assignmentThree,file="./assignmentThree.txt",row.name=F,sep="\t")
   write.table(assignmentFour,file="./assignmentFour.txt",row.name=F,sep="\t")
   write.table(assignmentFive,file="./assignmentFive.txt",row.name=F,sep="\t")  
+  #Code was written by erapryde as of 11th August 2015
+  #No part shall be reproduced without expressed permission
+  #in accordane with the Coursera Honor Code.
 }
