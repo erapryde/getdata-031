@@ -3,7 +3,7 @@
 |               |   CodeBook             |  Mode  |  Class       |  dim() or length()  |  Source         |  Remarks  |
 |:-------------:|:---------------------: |:------:|:------------:|:-------------------:|:---------------:|-----------|
 |**Raw**        |`features`              |  list  |  data.frame  |  561 x 2            | *features.txt*  |  *features* holds the names of measured variables in its $variable attribute |
-|               |`activityLabels`        |  list  |  data.frame  |  dim() or length()  |  Source  |  Remarks  |
+|               |`activityLabels`        |  list  |  data.frame  |  6 x 2              |  *activity_labels.txt*  |  *activityLabels* holds the mapping of the numeric code in *y* to the activity type in 6 factor levels  |
 |**Generated**  |`xTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |               |`xTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |               |`yTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
