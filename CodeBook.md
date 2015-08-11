@@ -1,5 +1,15 @@
 #List of generated variables<br>
 
+
+
+
+| :CodeBook:             |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+| Raw Variable names     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|`features`              |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|`activityLabels`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+
+
+
 ---
 ###Raw variable names, left unchanged out of respect for the data's source
 ---
