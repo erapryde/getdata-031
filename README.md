@@ -45,7 +45,7 @@ ________________________________________________________________________________
 #Assignment 1: Merges the training and the test sets to create one data set
 _______________________________________________________________________________________________________________________________
 Use rbind to bind the training and test data sets of X and y and subjects into one set<br>
-The results will be binded by column into one data set, assignmentOne. Note that we have not yet introduced column names as that is done in assignmentFour.
+The results will be binded by column into one data set, **assignmentOne**. Note that we have not yet introduced column names as that is done in assignmentFour.
 ```
   X<-rbind(xTrain,xTest)
   y<-rbind(yTrain,yTest)
@@ -55,12 +55,12 @@ The results will be binded by column into one data set, assignmentOne. Note that
 _______________________________________________________________________________________________________________________________
 #Assignment 2:  Extracts only the measurements on the mean and standard deviation for each measurement
 _______________________________________________________________________________________________________________________________
-Notice that there are 86 variables with the word "mean" in them, but only 66 with the word "mean()" in them.
+Notice that there are 86 variables with the word **"mean"** in them, **but only** 66 with the word **"mean()"** in them. See <a href="https://class.coursera.org/getdata-031/forum/thread?thread_id=160">**dispute**</a> here. CTA has confirmed that both are acceptable.
 Since we want only measurements on the mean and standard deviation, we elect to keep to only one form of the mean measurement, i.e. "mean()", and not select variables like meanFreq. <br><br>
   
-We shall grep on the pattern "mean[(][)]" and put the indexes into l1
-We shall grep on the pattern "std[(][)]" and put the indexes into l2 and merge these indices into l and extract X[,l] into Z
-Finally, we bind subject, activity and Z columnwise into assignmentTwo.
+We shall grep on the pattern "mean[(][)]" and put the indexes into **l1**
+We shall grep on the pattern "std[(][)]" and put the indexes into **l2** and merge these indices into **l** and extract X[,l] into **Z**
+Finally, we bind subject, activity and Z columnwise into **assignmentTwo**.
 ```
   l1<-grep("mean[(][)]",features$variable,ignore.case=T,value=F) #returns vector of indices of coumns with mean()
   l2<-grep("std[(][)]",features$variable,ignore.case=T,value=F) #returns vector of indices of columns with std()
