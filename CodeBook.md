@@ -14,10 +14,9 @@
 |`y`                     |  list  |  data.frame  |  10299 x 1 |  rbind(`yTrain`, `yTest`)  |  Merged datasets of `xTrain` and `xTest`, later to be used as a temporary holder and discarded in favour of the term **Activity**  |
 |`subject`               |  numeric  |  factor  |  10299  |  rbind(`subjectTrain`,`subjectTest`) and then recoded as factors  |  Holds participant identity whil X was measured  |
 |`Activity`              |  numeric  |  factor  |  10299  |  recoded y into factors using activityLabels  |  *LAYING*, *SITTING*, *STANDING*, *WALKING*, *WALKING_DOWNSTAIRS*, *WALKING_UPSTAIRS*  |
-|`subject` (overwritten) |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`l1`                    |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`l2`                    |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`l`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|`l1`                    |  numeric  |  integer  |  33  |  grep("mean[(][)]",features$variable,F,value=F)  |  indices of features that containt the word *"mean()"*  |
+|`l2`                    |  numeric  |  integer  |  33   |  grep("std[(][)]",features$variable,F,value=F)   |  indices of features that containt the word *"std()"*  |
+|`l`                     |  numeric  |  integer  |  66  |  c(`l1`,`l2)`  |  Overall container for indices of *"mean()"* and *"std()"*  |
 |`Z`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |`k`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |`a`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
