@@ -1,7 +1,6 @@
 run_analysis<- function(){
   
   library(dplyr)
-  setwd("C:/Users/Admin/Dropbox/Coursera/20150803 Getting and Cleaning Data")
   setwd("./UCI HAR Dataset")
   
   #---------------------------------------------------------
