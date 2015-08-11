@@ -71,13 +71,13 @@ Finally, we bind subject, activity and Z columnwise into **assignmentTwo**.
 _______________________________________________________________________________________________________________________________
 #Assignment 3:  Uses descriptive activity names to name the activities in the data set
 _______________________________________________________________________________________________________________________________
-From the lecture, variables with character values should be made into factor variables and be descriptive>br>
-We shall have to recode the integer list "y" into a list of factor variables of 6 levels called "Activity" by referencing to activity_labels.txt
+From the lecture, variables with character values should be made into factor variables and be descriptive<br>
+We shall have to recode the **integer list "y"** into a list of factor variables of 6 levels called **"Activity"** by referencing to activity_labels.txt
 
-The integer list "subject" shall also be recoded from an integer list of 1-30 into a list of factors variables "Test Subject 1"..."Test Subject 30"<br>
-The reason for recoding into factor variables is to prevent misunderstanding of the meaning of these numeric values. This is because PEOPLE and ACTIVITY do not have an order to them and are not interval or ordinal variables and are better suited as factor variables.<br>
+The **integer list "subject"** shall also be recoded from an integer list of 1-30 into a list of factors variables **"Test Subject 1"..."Test Subject 30"<br>**
+The reason for recoding into factor variables is to prevent misunderstanding of the meaning of these numeric values. This is because *PEOPLE* and *ACTIVITY* do not have an order to them and are not interval or ordinal variables and are better suited as factor variables.<br>
 "k" is a holding list for performing the conversion<br>
-assignmentThree shall be cbind(subject, Activity, Z)<br>
+**assignmentThree** shall be cbind(subject, Activity, Z)<br>
 ```
 #Recode Activity as factors
   k <- vector(length = dim(y)[1],mode="character")
@@ -103,12 +103,12 @@ ________________________________________________________________________________
 #Assignment 4:  Appropriately labels the data set with descriptive variable names.
 _______________________________________________________________________________________________________________________________
 From lecture, names of variables should be lowercase and not have underscores, dots or white spaces.<br>
-We shall extract the elements of features$variable through our previous index "l"  (features$variable[l]) into a holding variable, "a"<br><br>
+We shall extract the elements of **features$variable** through our previous index "l"  (features$variable[l]) into a holding variable, **"a"**<br><br>
 
 We shall now regularise the features$variable[l] into human-readable variable names and then pass these into the names of Z, which are the extracted values.<br>
 After that, we shall pass these names into the tolower().<br>
 Remember to change a back into a factor, as the features list was originally a list of 477 factor variables<br>
-
+The concatenated **assignmentFour** shall hold the **named** subjects, Activity as well as extracted **means()** and **std()**.
 ```
   a<-features$variable[l]
   a<-gsub("[(][)]","",a)
@@ -127,4 +127,21 @@ ________________________________________________________________________________
 ###with the average of each variable for each activity and each subject
 _______________________________________________________________________________________________________________________________
 There are 30 test subjects performing 6 different activities. Averaging the variables for each activity for each subject for each variable would lead to a 180 x 68 data.frame. <br><br>
-There are disputes over whether the data should be *long form* or *short form*, but either case are confirmed to be acceptable by <a href="https://class.coursera.org/getdata-031/forum/thread?thread_id=28">**Community TA, David Hood**</a>.
+There are disputes over whether the data should be *long form* or *short form*, but either case are confirmed to be acceptable by <a href="https://class.coursera.org/getdata-031/forum/thread?thread_id=28">**Community TA, David Hood**</a>.<br><br>
+The rows would have each subject/activity combination and the coloumns would be each variable<br>
+You need dplyr package to run this code.
+
+```
+assignmentFive<-group_by(assignmentFour, subject, activity) %>% summarise_each(funs(mean))
+```
+
+_______________________________________________________________________________________________________________________________
+#Write the output files as .txt
+_______________________________________________________________________________________________________________________________
+```
+  write.table(assignmentOne,file="./assignmentOne.txt",row.name=F,sep="\t")
+  write.table(assignmentTwo,file="./assignmentTwo.txt",row.name=F,sep="\t")
+  write.table(assignmentThree,file="./assignmentThree.txt",row.name=F,sep="\t")
+  write.table(assignmentFour,file="./assignmentFour.txt",row.name=F,sep="\t")
+  write.table(assignmentFive,file="./assignmentFive.txt",row.name=F,sep="\t")  
+```
