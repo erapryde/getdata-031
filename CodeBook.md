@@ -2,7 +2,7 @@
 
 |               |   CodeBook             |  Mode  |  Class       |  dim() or length()  |  Source         |  Remarks  |
 |:-------------:|:---------------------: |:------:|:------------:|:-------------------:|:---------------:|-----------|
-|**Raw**        |`features`              |  list  |  data.frame  |  561 x 2            | *features.txt*  |  Remarks  |
+|**Raw**        |`features`              |  list  |  data.frame  |  561 x 2            | *features.txt*  |  names of measured variables  |
 |               |`activityLabels`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |**Generated**  |`xTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |               |`xTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
