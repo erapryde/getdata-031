@@ -3,13 +3,16 @@
 
 
 
-|   CodeBook             |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|:---------------------: |--------|---------|---------------------|----------|-----------|
-| **Raw Variable names** |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`features`              |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|`activityLabels`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-
-
+|             |   CodeBook             |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|:-----------:|:---------------------: |:------:|:-------:|:-------------------:|:--------:|-----------|
+|**Raw**      |`features`              |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|             |`activityLabels`        |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|**Generated**|`xTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|             |`xTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|             |`yTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|             |`yTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  | 
+|             |`subjectTrain`          |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
+|             |`subjectTest`           |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 
 ---
 ###Raw variable names, left unchanged out of respect for the data's source
