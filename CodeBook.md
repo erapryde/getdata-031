@@ -1,13 +1,13 @@
 #List of raw, interim, generated and transformed variables<br>
 
-|               |   CodeBook             |  Mode  |  Class       |  dim() or length()  |  Source         |  Remarks  |
-|:-------------:|:---------------------: |:------:|:------------:|:-------------------:|:---------------:|-----------|
+|               |   CodeBook             |  Mode  |  Class       |Type|  dim() or length()  |  Source         |  Remarks  |
+|:-------------:|:---------------------: |:------:|:------------:|---|:-------------------:|:---------------:|-----------|
 |**Raw**        |`features`              |  list  |  data.frame  |  561 x 2            | *features.txt*  |  *features* holds the names of measured variables in its $variable attribute |
 |               |`activityLabels`        |  list  |  data.frame  |  6 x 2              |  *activity_labels.txt*  |  *activityLabels* holds the mapping of the numeric code in *y* to the activity type in 6 factor levels  |
-|**Generated**  |`xTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|               |`xTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|               |`yTrain`                |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
-|               |`yTest`                 |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  | 
+|**Generated**  |`xTrain`                |  list  |  data.frame  |  7352 x 561         |  *X_train.txt*  |  Training dataset holding normalised, numeric values of 561 measurements of 7352 combinations of subjects/activity |
+|               |`xTest`                 |  list  |  data.frame  |  2947 x 561         |  *X_test.txt*  |  Test dataset holding normalised, numeric values of 561 measurements of 2947 combinations of subjects/activity |
+|               |`yTrain`                |  list  |  data.frame  |  7352 x 1           |  *y_train.txt*  |  Training dataset holding activities taking place while xTrain was being measured. Needs to be recoded into factors  |
+|               |`yTest`                 |  list  |  data.frame  |  2947 x 1           |  *y_test.txt*   |  Test dataset holding activities taking place while xTest was being measured. Needs to be recoded into factors  | 
 |               |`subjectTrain`          |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |               |`subjectTest`           |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
 |**Transformed**|`X`                     |  Mode  |  Class  |  dim() or length()  |  Source  |  Remarks  |
