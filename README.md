@@ -1,11 +1,10 @@
 #README.md
 ---
-###Codebook for variables can be found <a href="https://github.com/erapryde/getdata-031/blob/master/CodeBook.md">here</a>.
----
 I would like to acknowledge the source of the dataset.<br>
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 ---
-
+###Codebook for variables employed in the course of the analysis can be found <a href="https://github.com/erapryde/getdata-031/blob/master/CodeBook.md">here</a>.
+---
 ![course project layout](https://cloud.githubusercontent.com/assets/8188574/9192272/2ac304b4-403c-11e5-9cdd-a0f9fdf97f25.png)
 
 run-analysis.R must be placed at the same hierarchy as the UCI HAR Dataset folder, with the datasets distributed in the same manner you have downloaded it. The following picture describes the file/folder hierarchy.<br><br>
