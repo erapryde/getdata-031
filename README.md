@@ -1,6 +1,6 @@
 #README.md
 ---
-I would like to acknowledge the source of the dataset.<br>
+I would like to acknowledge the source of the dataset.
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 ---
 ###Codebook for variables employed in the course of the analysis can be found <a href="https://github.com/erapryde/getdata-031/blob/master/CodeBook.md">here</a>.
