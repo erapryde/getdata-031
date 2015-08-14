@@ -5,7 +5,7 @@ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ort
 ---
 ###Codebook for variables employed in the course of the analysis can be found [here](https://github.com/erapryde/getdata-031/blob/master/CodeBook.md).
 ---
-![course project layout](https://cloud.githubusercontent.com/assets/8188574/9192272/2ac304b4-403c-11e5-9cdd-a0f9fdf97f25.png, fig.height = 4)
+![course project layout](https://cloud.githubusercontent.com/assets/8188574/9192272/2ac304b4-403c-11e5-9cdd-a0f9fdf97f25.png)
 
 run-analysis.R must be placed at the same hierarchy as the UCI HAR Dataset folder, with the datasets distributed in the same manner you have downloaded it. The following picture describes the file/folder hierarchy.<br><br>
 run_analysis.R also assumes that you have a Windows system as setwd() commands are different for Mac OS.<br><br>
